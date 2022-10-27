@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lib_b"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "libb"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7.13,<3.10"
+scipy=[
+    {version='1.5.*', python='~3.7.13'},
+    {version='1.8.0', python='>=3.8'}
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

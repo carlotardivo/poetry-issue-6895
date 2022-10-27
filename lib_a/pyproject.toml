@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lib_a"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "liba"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7.13,<3.10"
+lib_b={path='../lib_b'}
+lib_c={path='../lib_c', python = ">=3.9,<3.10"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
